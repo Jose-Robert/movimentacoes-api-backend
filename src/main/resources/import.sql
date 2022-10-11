@@ -1,0 +1,1 @@
+INSERT INTO tb_conta (agencia, numero_conta, digito_conta, saldo) VALUES ('0039', '123456', '5', 200)

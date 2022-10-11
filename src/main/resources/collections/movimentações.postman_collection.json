@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "9cc8c27d-1f9d-4cb3-bfe0-97769419d8e1",
+		"name": "movimentações",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17241946"
+	},
+	"item": [
+		{
+			"name": "consulta saldos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/contas/0039123456/saldos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contas",
+						"0039123456",
+						"saldos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultar historicos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/historicos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"historicos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "payload request sqs",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"agencia\": \"0039\",\r\n    \"numero_conta\": \"123456\",\r\n    \"digito_conta\": \"5\",\r\n    \"valor\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
